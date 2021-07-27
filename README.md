@@ -1,1 +1,1 @@
-# bert-team-project
+# koBERT-yogiyo-reviews-classfication
