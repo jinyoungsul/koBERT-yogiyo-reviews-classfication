@@ -176,9 +176,11 @@ for category in food_dict:
                 time.sleep(interval)
                 print('페이지 돌아가기 완료!\n')
                 continue
-            
-        df.to_csv('./data/yogiyo/' + df.Restaurant[0] + '.csv')
-        print('리뷰 저장하는 완료!')
+        try:
+            df.to_csv('./data/yogiyo/' + df.Restaurant[0] + '.csv')
+            print('리뷰 저장하는 완료!')
+        except:
+            pass
         
         print('페이지 돌아가기중...')
         driver.execute_script("window.history.go(-1)")
