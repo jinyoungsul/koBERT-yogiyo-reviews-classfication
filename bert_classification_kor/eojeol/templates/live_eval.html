@@ -1,0 +1,36 @@
+<ul class="answer-list">
+    {% if intent[0] == '5.0' %}
+    <li style="border: 3px solid #00FF00; padding: 0.3em 1em;border-radius: 2px; background: #55FF55; margin: 3px;">
+        <b>리뷰: </b>
+        {{ eval_text[0] }}
+        <ul>
+            <li>
+                <b>변환 결과: </b>
+                {{ predict[0] }}
+            </li>
+        </ul>
+    </li>
+    {% elif intent[0] == '3.0'%}
+    <li style="border: 3px solid #000000; padding: 0.3em 1em;border-radius: 2px; background: #FFFFFF; margin: 3px;">
+        <b>리뷰: </b>
+        {{ eval_text[0] }}
+        <ul>
+            <li>
+                <b>변환 결과: </b>
+                {{ predict[0] }}
+            </li>
+        </ul>
+    </li>
+    {% else %}
+        <li style="border: 3px solid #FF0000; padding: 0.3em 1em;border-radius: 2px; background: #FF5555; margin: 3px;">
+        <b>리뷰: </b>
+        {{ eval_text[0] }}
+        <ul>
+            <li>
+                <b>변환 결과: </b>
+                {{ predict[0] }}
+            </li>
+        </ul>
+    </li>
+    {% endif %}
+</ul>

@@ -1,0 +1,33 @@
+<ul class="answer-list">
+    {% if predict[0][1] == 5.0 %}
+        <li style="border: 3px solid #00FF00; padding: 0.3em 1em;border-radius: 2px; background: #55FF55; margin: 3px;">
+            <b>변환 결과: </b>
+            ★★★★★ {{ predict[0][0] }}점입니다.      
+        </li>
+    {% elif predict[0][1] == 4.0 %}
+        <li style="border: 3px solid #55FF55; padding: 0.3em 1em;border-radius: 2px; background: #AAFFAA; margin: 3px;">
+            <b>변환 결과: </b>
+            ★★★★☆ {{ predict[0][0] }}점입니다.      
+        </li>
+    {% elif predict[0][1] == 3.0 %}
+        <li style="border: 3px solid #000000; padding: 0.3em 1em;border-radius: 2px; background: #FFFFFF; margin: 3px;">
+            <b>변환 결과: </b>
+            ★★★☆☆ {{ predict[0][0] }}점입니다.      
+        </li>
+    {% elif predict[0][1] == 2.0 %}
+        <li style="border: 3px solid #FF5555; padding: 0.3em 1em;border-radius: 2px; background: #FFAAAA; margin: 3px;">
+            <b>변환 결과: </b>
+            ★★☆☆☆ {{ predict[0][0] }}점입니다.      
+        </li>
+    {% elif predict[0][1] == 1.0 %}
+        <li style="border: 3px solid #FF0000; padding: 0.3em 1em;border-radius: 2px; background: #FF5555; margin: 3px;">
+            <b>변환 결과: </b>
+            ★☆☆☆☆ {{ predict[0][0] }}점입니다.      
+        </li>
+    {% else %}
+        <li style="border: 3px solid #000000; padding: 0.3em 1em;border-radius: 2px; background: #000000; margin: 3px;">
+            <b>변환 결과: </b>
+            {{ predict[0][0] }}점입니다.      
+        </li>
+    {% endif %}
+</ul>

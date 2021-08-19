@@ -1,0 +1,7 @@
+Flask==1.1.1
+tensorflow_gpu==1.15
+tensorflow_hub==0.7.0
+flask_dropzone
+flask-ngrok
+konlpy
+h5py==2.10.0

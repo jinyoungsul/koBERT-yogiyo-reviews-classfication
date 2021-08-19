@@ -1,0 +1,67 @@
+{%  extends "layout.html" %}
+
+{% block body %}
+
+<div class="navigation ver-pc">
+      <div class='nav-top clearfix'>
+        <h1 class='logo flex white' style="font-size=64px; font-weight: bold; text-shadow: 1px 1px 1.2px midnightblue; padding: 30px"> 
+            KorBERT를 이용한 Yogiyo Review Ratings Demo 
+        </h1>
+      </div>
+    </div>
+    <div class='nav-bottom clearfix'>
+        <p class='flex' style="font-size:32px; font-weight: bold; text-shadow: 2px 2px 2.4px midnightblue;">
+            ETRI에서 제공하는 KorBERT 모델을 사용해 finetuning한 Intention Classification Demo 입니다.
+        </p>
+    </div>
+    <div class='main'>
+        <div class="container">
+        <div id="evaluate-input" class="end">
+            <h4 style="font-size: 23px; font-weight: bold; color: indianred; text-shadow: 1px 1px 1.2px midnightblue;border: 5px solid #C9C9C9; padding: 0.3em 1em;border-radius: 2px; margin: 5px;">
+                리뷰
+            </h4>
+            <textarea id="evaluate-data" placeholder="리뷰를 남겨주세요. 훈련된 모델을 이용해 평점으로 변환합니다."></textarea>
+            <button id="evaluate" class="btn btn-primary">평점으로 변환하기</button>
+        </div>
+        <div class="sentiment-result">
+          <div>
+              <span id="senti-result"></span>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div id="evaluate-input2" class="end">
+            <h4 style="font-size: 23px; font-weight: bold; color: indianred; text-shadow: 1px 1px 1.2px midnightblue;border: 5px solid #C9C9C9; padding: 0.3em 1em;border-radius: 2px; margin: 5px;">
+                리뷰 파일
+            </h4>
+            <form id="fileForm" action="/_evaluate_helper_file" method="post" enctype="multipart/form-data">
+              <input type="file" id="file" name="file">
+              <button type="button" id="evaluate_csv" class="btn btn-primary">평점으로 변환하기</button>
+            </form>
+      </div>
+      <div class="sentiment-result">
+        <div>
+              <span id="csv-result"></span>
+          </div>
+      </div>
+      </div>
+    </div>
+    
+    <div class="history hidden">
+        <h3> History <a id="toggle-history">(hide)</a></h3>
+        <span id="history"></span>
+    </div>
+</div>
+
+<style>
+    .nav-bottom {
+    background-image: url("{{ url_for('static', filename='salad1.png') }}");
+    padding: 3rem 0rem 3rem 5rem;
+    color: #fff;
+    opacity: 0.75;
+    }
+</style>
+
+{% endblock %}
+
+
