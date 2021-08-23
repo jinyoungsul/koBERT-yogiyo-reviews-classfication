@@ -22,7 +22,7 @@
  - 성능 개선을 위해 문장당 긍부정 비율에 기반한 기준 수립후 재라벨링
  - 수집된 리뷰 코멘트를 30797 vocabs로 토큰화
  - KorBERT 모델을 파인튜닝 할 수 있게 label과 input sequence로 나누어 줌 data.txt -> label, seq.in
-   seq.in은 KorBERT가 pre-train된 대로 tokenization 과정을 거쳐 생성됨
+ - seq.in은 KorBERT가 pre-train된 대로 tokenization 과정을 거쳐 생성됨
    
  ![label](https://user-images.githubusercontent.com/8359931/130418608-57c32632-98ba-4119-a9de-e7ad8379d231.PNG)
  ![sequence](https://user-images.githubusercontent.com/8359931/130418620-d5982006-9965-403f-b732-7b9a51d65604.PNG)
