@@ -15,3 +15,6 @@
 ## 3. 데이터 수집 및 전처리
  - 카테고리별 식당 리뷰 무작위 수집
  
+<figure class="video_container">
+  <iframe src="https://i.imgur.com/QsDLNIM.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
