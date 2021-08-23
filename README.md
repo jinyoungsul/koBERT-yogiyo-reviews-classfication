@@ -10,7 +10,8 @@
 ## 2. ETRI koBERT(pre trained)
  - https://aiopen.etri.re.kr/service_dataset.php 에서 협약서 작성 및 tensorflow 버전 다운로드
  - DNN, LSTM, CNN 모델들과 성능 비교시 정확도가 더 우수해서 해당 모델 채택
-
+ 
+ ![](https://i.imgur.com/gYlPKr7.png)
 ## 3. 데이터 수집 및 전처리
  - 카테고리별 식당 리뷰 무작위 수집
  
