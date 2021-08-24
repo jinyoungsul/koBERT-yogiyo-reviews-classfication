@@ -32,7 +32,8 @@
   - Flask를 이용해 웹 서버를 구동하고, 개별 리뷰에 대한 평점과
     csv파일 업로드를 한 후 개선된 평점 확인 가능
   
- ![ezgif com-gif-maker](https://user-images.githubusercontent.com/8359931/130536760-cf3bb0d5-58c3-45cc-91e0-053d92360b5e.gif)
+ ![시연영상](https://user-images.githubusercontent.com/8359931/130537602-b3cba16c-9a00-4b8c-b3c5-a003447d8676.gif)
+
 
   
 
