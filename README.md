@@ -12,7 +12,7 @@
  
  ![](https://i.imgur.com/gYlPKr7.png)
 ## 3. 데이터 수집 및 전처리
-### pre processing
+ - pre processing
   - Merge_Regex: 크롤링된 파일 다루기
   - Make_Sample: 재라벨링한 파일 다루기
 
