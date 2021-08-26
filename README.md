@@ -33,6 +33,10 @@
     csv파일 업로드를 한 후 개선된 평점 확인 가능
   
  ![시연영상](https://user-images.githubusercontent.com/8359931/130537602-b3cba16c-9a00-4b8c-b3c5-a003447d8676.gif)
+ 
+ ### preprocessing
+ - Merge_Regex: 크롤링된 파일 다루기
+ - Make_Sample: 재라벨링한 파일 
 
 
   
