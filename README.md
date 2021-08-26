@@ -36,7 +36,7 @@
  
  ### preprocessing
  - Merge_Regex: 크롤링된 파일 다루기
- - Make_Sample: 재라벨링한 파일 
+ - Make_Sample: 재라벨링한 파일 다루기
 
 
   
