@@ -13,8 +13,8 @@
  ![](https://i.imgur.com/gYlPKr7.png)
 ## 3. 데이터 수집 및 전처리
 ### pre processing
- - Merge_Regex: 크롤링된 파일 다루기
- - Make_Sample: 재라벨링한 파일 다루기
+  - Merge_Regex: 크롤링된 파일 다루기
+  - Make_Sample: 재라벨링한 파일 다루기
 
  - 카테고리별 식당 리뷰 무작위 수집 (Selenium을 사용하여 리뷰 크롤링 진행)
  
