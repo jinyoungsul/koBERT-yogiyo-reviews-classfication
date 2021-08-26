@@ -8,9 +8,7 @@
  
 ## 2. ETRI koBERT(pre trained)
  - https://aiopen.etri.re.kr/service_dataset.php 에서 협약서 작성 및 tensorflow 버전 다운로드
- - DNN, LSTM, CNN 모델들과 성능 비교시 정확도가 더 우수해서 해당 모델 채택
- 
- ![](https://i.imgur.com/gYlPKr7.png)
+
 ## 3. 데이터 수집 및 전처리
  - pre processing
    - Merge_Regex: 크롤링된 파일 다루기
@@ -38,7 +36,13 @@
   
  ![시연영상](https://user-images.githubusercontent.com/8359931/130537602-b3cba16c-9a00-4b8c-b3c5-a003447d8676.gif)
 
-
+ ## 5. 결론
+  - BERT 모델은 동일한 단어의 문맥적 의미를 파악하여 표현
+  - 대용량 코퍼스 기반으로 사전학습된 모델을 가지고 수행하고자 하는 작업에 따라
+    미세조정을 하여 다양하게 활용가능하다.
+  - 다른 모델들과 성능비교시 정확도 또한 더 우수하다.
+  
+   ![](https://i.imgur.com/gYlPKr7.png)
   
 
 
